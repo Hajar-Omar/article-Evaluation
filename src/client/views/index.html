@@ -1,48 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Article Evaluation</title>
-  </head>
 
-  <body>
-    <header></header>
+<head>
+  <meta charset="utf-8" />
+  <title>Article Evaluation</title>
+</head>
 
-    <main>
-      <div
-        class="
-          d-flex
-          w-100
-          p-5
-          align-item-center
-          justify-content-center
-          flex-column
-        "
-      >
-        <label class="my-5" for="txt"
-          >Please enter your article to process:</label
-        >
-        <textarea
-          name="arrticle"
-          id="txt"
-          cols="25"
-          rows="5"
-          placeholder="Type an article or its Link"
-        ></textarea>
-        <button class="mt-3" id="btn">Show Result</button>
-      </div>
-      <p id="result"></p>
-    </main>
+<body>
+  <header></header>
 
-    <footer></footer>
-    <script>
-      // Check that service workers are supported
-      if ("serviceWorker" in navigator) {
-        // Use the window load event to keep the page load performant
-        window.addEventListener("load", () => {
-          navigator.serviceWorker.register("/service-worker.js");
-        });
-      }
-    </script>
-  </body>
+  <main>
+    <div class="d-flex  w-100 p-5 align-item-center justify-content-center flex-column">
+      <label class="my-5" for="txt">Please enter URL of an article to process:</label>
+      <textarea name="arrticle" id="txt" cols="25" rows="5" placeholder="Type an article's link"></textarea>
+      <button class="mt-3" id="submit-btn">Show Result</button>
+    </div>
+    <div id="result" class="text-center"></div>
+  </main>
+
+  <footer></footer>
+  <script>
+    // Check that service workers are supported
+    if ("serviceWorker" in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/service-worker.js");
+      });
+    }
+  </script>
+</body>
+
 </html>
