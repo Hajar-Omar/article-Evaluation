@@ -1,7 +1,6 @@
 import "./styles/resets.scss";
 import "./styles/base.scss";
 
-import base from "./js/base";
+import { handleSubmit } from "./js/base";
 
-
-export { base };
+export { handleSubmit };
