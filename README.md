@@ -1,4 +1,4 @@
-# Article Evaluation via NLP [] Natural Language Processing ](https://en.wikipedia.org/wiki/Natural_language_processing)
+# Article Evaluation via NLP [Natural Language Processing ](https://en.wikipedia.org/wiki/Natural_language_processing)
 
 The project allows users to run Natural Language Processing (NLP) on articles or blogs found on other websites using [Meaning Cloud](https://learn.meaningcloud.com)
 
